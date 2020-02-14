@@ -1,5 +1,4 @@
 package Week1.KeyboardInput;
-
 import java.util.Scanner;
 
 public class AgeInFiveYears {
