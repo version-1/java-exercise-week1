@@ -5,6 +5,11 @@ public class Rectangle {
   private int height = 1;
   private String color = "Blue";
 
+  public Rectangle(int width, int height) {
+    this.setHeight(height);
+    this.setWidth(width);
+  }
+
   public Rectangle(int width, int height, String color) {
     this.setHeight(height);
     this.setWidth(width);
@@ -33,7 +38,7 @@ public class Rectangle {
 
   public void setColor(String color) {
     if (color.length() > 2 && color.length() < 20) {
-      this.color = color;
+      this.color = color.substring(0, 1).toUpperCase() + color.substring(1);
     }
   }
 
